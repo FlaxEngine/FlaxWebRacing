@@ -1,0 +1,481 @@
+{
+	"ID": "2a57c9374ff9382c7b30b784a801f39f",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6911,
+	"Data": [
+	{
+		"ID": "105e4b2548b50537e0a724a9ae68c694",
+		"TypeName": "FlaxEngine.WheeledVehicle",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "Vehicle",
+		"StaticFlags": 0,
+		"Layer": 3,
+		"OverrideMass": true,
+		"Mass": 200.0,
+		"CenterOfMassOffset": {
+			"X": 0.0,
+			"Y": -20.0,
+			"Z": 0.0
+		},
+		"Wheels": [
+			{
+				"Mass": 20.0,
+				"Radius": 30.0,
+				"Width": 20.0,
+				"MaxSteerAngle": 60.0,
+				"DampingRate": 0.25,
+				"MaxBrakeTorque": 1500.0,
+				"MaxHandBrakeTorque": 0.0,
+				"Collider": "871c4af1419826f15c9a32b7e52980ad",
+				"SprungMassMultiplier": 1.0,
+				"SuspensionDampingRate": 1.0,
+				"SuspensionMaxRaise": 10.0,
+				"SuspensionMaxDrop": 10.0,
+				"SuspensionForceOffset": 0.0,
+				"TireLateralStiffness": 17.0,
+				"TireLateralMax": 2.0,
+				"TireLongitudinalStiffness": 1000.0,
+				"TireFrictionScale": 1.0
+			},
+			{
+				"Mass": 20.0,
+				"Radius": 30.0,
+				"Width": 20.0,
+				"MaxSteerAngle": 60.0,
+				"DampingRate": 0.25,
+				"MaxBrakeTorque": 1500.0,
+				"MaxHandBrakeTorque": 0.0,
+				"Collider": "39a380e240eb7fb4fd5bc1a80984881b",
+				"SprungMassMultiplier": 1.0,
+				"SuspensionDampingRate": 1.0,
+				"SuspensionMaxRaise": 10.0,
+				"SuspensionMaxDrop": 10.0,
+				"SuspensionForceOffset": 0.0,
+				"TireLateralStiffness": 17.0,
+				"TireLateralMax": 2.0,
+				"TireLongitudinalStiffness": 1000.0,
+				"TireFrictionScale": 1.0
+			},
+			{
+				"Mass": 20.0,
+				"Radius": 30.0,
+				"Width": 20.0,
+				"MaxSteerAngle": 0.0,
+				"DampingRate": 0.25,
+				"MaxBrakeTorque": 1500.0,
+				"MaxHandBrakeTorque": 2000.0,
+				"Collider": "23039d5a4c03ca50e303b4bfa5993f30",
+				"SprungMassMultiplier": 1.0,
+				"SuspensionDampingRate": 1.0,
+				"SuspensionMaxRaise": 10.0,
+				"SuspensionMaxDrop": 10.0,
+				"SuspensionForceOffset": 0.0,
+				"TireLateralStiffness": 17.0,
+				"TireLateralMax": 2.0,
+				"TireLongitudinalStiffness": 1000.0,
+				"TireFrictionScale": 1.0
+			},
+			{
+				"Mass": 20.0,
+				"Radius": 30.0,
+				"Width": 20.0,
+				"MaxSteerAngle": 0.0,
+				"DampingRate": 0.25,
+				"MaxBrakeTorque": 1500.0,
+				"MaxHandBrakeTorque": 2000.0,
+				"Collider": "9f91619641f7500bcb470f8f0fb5281a",
+				"SprungMassMultiplier": 1.0,
+				"SuspensionDampingRate": 1.0,
+				"SuspensionMaxRaise": 10.0,
+				"SuspensionMaxDrop": 10.0,
+				"SuspensionForceOffset": 0.0,
+				"TireLateralStiffness": 17.0,
+				"TireLateralMax": 2.0,
+				"TireLongitudinalStiffness": 1000.0,
+				"TireFrictionScale": 1.0
+			}
+		],
+		"Engine": {
+			"MaxTorque": 400.0,
+			"MaxRotationSpeed": 3000.0
+		},
+		"Differential": {
+			"Type": 5
+		},
+		"Gearbox": {
+			"ForwardGearsRatios": 3,
+			"ClutchStrength": 20.0
+		}
+	},
+	{
+		"ID": "b4ef66404dea7a8e74ce919af96088d6",
+		"TypeName": "Game.Vehicle",
+		"ParentID": "105e4b2548b50537e0a724a9ae68c694",
+		"Model": "f2d80ee342bf2f6ec117e2be6b2ac5da",
+		"Body": "f646fc9b48c4da0c7ab8a8b97a5ae71e",
+		"Wheels": [
+			"992eaf27458d523f5e956e98f55600d2",
+			"6929bc454841361cc086569e90c5cc21",
+			"6443e2834ae6570f76497797dac433dc",
+			"e0dd9d95420224e0c5dbb8a98b675669"
+		],
+		"EngineSound": "43b41ff24ccde038e59595834e484588",
+		"ImpactSound": "1a3a4e1140928df58dc55abb2315ec45",
+		"ScreechSound": "9c6b826a422330f0e39307a0a733fce9",
+		"TrailParticles": [
+			"7a7719044e2b6fc468d09b93e6b83620",
+			"c96ac18d408efb208ae67ab5d88ab6bd"
+		],
+		"EngineVolume": 0.25,
+		"ImpactVolume": 0.800000011920929,
+		"ScreechVolume": 0.8999999761581421
+	},
+	{
+		"ID": "9f91619641f7500bcb470f8f0fb5281a",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"ParentID": "105e4b2548b50537e0a724a9ae68c694",
+		"Name": "Wheel_RR",
+		"Transform": {
+			"Translation": {
+				"X": 54.28417205810547,
+				"Y": 28.223846435546875,
+				"Z": -65.1815185546875
+			},
+			"Orientation": {
+				"X": 0.5,
+				"Y": -0.5,
+				"Z": 0.5,
+				"W": 0.5
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 4,
+		"Radius": 30.0
+	},
+	{
+		"ID": "39a380e240eb7fb4fd5bc1a80984881b",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"ParentID": "105e4b2548b50537e0a724a9ae68c694",
+		"Name": "Wheel_FR",
+		"Transform": {
+			"Translation": {
+				"X": 54.284141540527344,
+				"Y": 29.418825149536133,
+				"Z": 85.979248046875
+			},
+			"Orientation": {
+				"X": 0.5,
+				"Y": -0.5,
+				"Z": 0.5,
+				"W": 0.5
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 4,
+		"Radius": 30.0
+	},
+	{
+		"ID": "23039d5a4c03ca50e303b4bfa5993f30",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"ParentID": "105e4b2548b50537e0a724a9ae68c694",
+		"Name": "Wheel_RL",
+		"Transform": {
+			"Translation": {
+				"X": -54.198829650878906,
+				"Y": 28.223846435546875,
+				"Z": -65.18154907226563
+			},
+			"Orientation": {
+				"X": 0.5,
+				"Y": -0.5,
+				"Z": 0.5,
+				"W": 0.5
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 4,
+		"Radius": 30.0
+	},
+	{
+		"ID": "871c4af1419826f15c9a32b7e52980ad",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"ParentID": "105e4b2548b50537e0a724a9ae68c694",
+		"Name": "Wheel_FL",
+		"Transform": {
+			"Translation": {
+				"X": -54.19886016845703,
+				"Y": 29.418825149536133,
+				"Z": 85.979248046875
+			},
+			"Orientation": {
+				"X": 0.5,
+				"Y": -0.5,
+				"Z": 0.5,
+				"W": 0.5
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 4,
+		"Radius": 30.0
+	},
+	{
+		"ID": "f2d80ee342bf2f6ec117e2be6b2ac5da",
+		"PrefabID": "014584b145761f202bdc9db2e75a1638",
+		"PrefabObjectID": "96fd20c3407735ed7b407fb554605123",
+		"ParentID": "105e4b2548b50537e0a724a9ae68c694",
+		"Name": "vehicle-truck-yellow",
+		"Transform": {
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": 0.0,
+				"W": 1.4901161193847656e-8
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 1
+	},
+	{
+		"ID": "0170b33f4a0c73224bb0dd8da3a56f80",
+		"PrefabID": "014584b145761f202bdc9db2e75a1638",
+		"PrefabObjectID": "009d4f704923a66728a3a99ffcd25bbd",
+		"ParentID": "f2d80ee342bf2f6ec117e2be6b2ac5da",
+		"ImportOptions": {}
+	},
+	{
+		"ID": "27d06f074b4a2f13c609b383e148fa48",
+		"PrefabID": "014584b145761f202bdc9db2e75a1638",
+		"PrefabObjectID": "6fdb17ba4eccee0215debbba5b99f1c9",
+		"ParentID": "f2d80ee342bf2f6ec117e2be6b2ac5da",
+		"StaticFlags": 0,
+		"Layer": 1,
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "6443e2834ae6570f76497797dac433dc",
+		"PrefabID": "014584b145761f202bdc9db2e75a1638",
+		"PrefabObjectID": "29b421db40386f6e209f78924ffeacdb",
+		"ParentID": "f2d80ee342bf2f6ec117e2be6b2ac5da",
+		"StaticFlags": 0,
+		"Layer": 1,
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "e0dd9d95420224e0c5dbb8a98b675669",
+		"PrefabID": "014584b145761f202bdc9db2e75a1638",
+		"PrefabObjectID": "0d08a8784a6d70facf4b7e9a5346645f",
+		"ParentID": "f2d80ee342bf2f6ec117e2be6b2ac5da",
+		"StaticFlags": 0,
+		"Layer": 1,
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "992eaf27458d523f5e956e98f55600d2",
+		"PrefabID": "014584b145761f202bdc9db2e75a1638",
+		"PrefabObjectID": "00763da3431f850a87ef5fba3426ffea",
+		"ParentID": "f2d80ee342bf2f6ec117e2be6b2ac5da",
+		"StaticFlags": 0,
+		"Layer": 1,
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "6929bc454841361cc086569e90c5cc21",
+		"PrefabID": "014584b145761f202bdc9db2e75a1638",
+		"PrefabObjectID": "0daefa9a47871b331428679a4bf0401e",
+		"ParentID": "f2d80ee342bf2f6ec117e2be6b2ac5da",
+		"StaticFlags": 0,
+		"Layer": 1,
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "f646fc9b48c4da0c7ab8a8b97a5ae71e",
+		"PrefabID": "014584b145761f202bdc9db2e75a1638",
+		"PrefabObjectID": "2442b8ed4e5a804a4b3eb1b0c320903f",
+		"ParentID": "f2d80ee342bf2f6ec117e2be6b2ac5da",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 44.36516952514648,
+				"Z": 0.0
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 1,
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "55d96fb04a85f138f232af90b959fa06",
+		"TypeName": "FlaxEngine.CapsuleCollider",
+		"ParentID": "105e4b2548b50537e0a724a9ae68c694",
+		"Name": "CapsuleCollider",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 83.77098083496094,
+				"Z": 3.58258056640625
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.7071068286895752,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 1,
+		"Radius": 65.0,
+		"Height": 150.0
+	},
+	{
+		"ID": "7a7719044e2b6fc468d09b93e6b83620",
+		"TypeName": "FlaxEngine.ParticleEffect",
+		"ParentID": "105e4b2548b50537e0a724a9ae68c694",
+		"Name": "Smoke",
+		"Transform": {
+			"Translation": {
+				"X": 55.000003814697266,
+				"Y": 2.0222854614257813,
+				"Z": -75.411376953125
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": 0.0,
+				"W": 1.4901161193847656e-8
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 1,
+		"Overrides": [],
+		"ParticleSystem": "3bc21a284899ef1dace74481cedea007"
+	},
+	{
+		"ID": "c96ac18d408efb208ae67ab5d88ab6bd",
+		"TypeName": "FlaxEngine.ParticleEffect",
+		"ParentID": "105e4b2548b50537e0a724a9ae68c694",
+		"Name": "Smoke",
+		"Transform": {
+			"Translation": {
+				"X": -54.99999237060547,
+				"Y": 2.0222854614257813,
+				"Z": -75.411376953125
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": 0.0,
+				"W": 1.4901161193847656e-8
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 1,
+		"Overrides": [],
+		"ParticleSystem": "3bc21a284899ef1dace74481cedea007"
+	},
+	{
+		"ID": "43b41ff24ccde038e59595834e484588",
+		"TypeName": "FlaxEngine.AudioSource",
+		"ParentID": "105e4b2548b50537e0a724a9ae68c694",
+		"Name": "Engine Sound",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 86.3160400390625,
+				"Z": 82.20904541015625
+			}
+		},
+		"StaticFlags": 0,
+		"Clip": "36edac4d4dfdef3e59bebf919140af3a",
+		"Volume": 0.0,
+		"Loop": true,
+		"PlayOnStart": true
+	},
+	{
+		"ID": "1a3a4e1140928df58dc55abb2315ec45",
+		"TypeName": "FlaxEngine.AudioSource",
+		"ParentID": "105e4b2548b50537e0a724a9ae68c694",
+		"Name": "Impact Sound",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 53.16012954711914,
+				"Z": 126.17108154296876
+			}
+		},
+		"StaticFlags": 0,
+		"Clip": "373fe5e345da75edbf9bec8208818704"
+	},
+	{
+		"ID": "9c6b826a422330f0e39307a0a733fce9",
+		"TypeName": "FlaxEngine.AudioSource",
+		"ParentID": "105e4b2548b50537e0a724a9ae68c694",
+		"Name": "Screech Sound",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 19.82742691040039,
+				"Z": -67.4722900390625
+			}
+		},
+		"StaticFlags": 0,
+		"Clip": "4c7d312644069ee7c547129961586bc0",
+		"Volume": 0.0,
+		"Loop": true,
+		"PlayOnStart": true
+	}
+]
+}

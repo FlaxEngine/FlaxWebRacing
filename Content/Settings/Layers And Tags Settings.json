@@ -1,0 +1,55 @@
+{
+	"ID": "bb6fbecf458db0ecffa5e2a5155b2b4f",
+	"TypeName": "FlaxEditor.Content.Settings.LayersAndTagsSettings",
+	"EngineBuild": 6911,
+	"Data": {
+	"Tags": [
+		"Player",
+		"Bullet"
+	],
+	"Layers": [
+		"Default",
+		"Vehicle",
+		"",
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null
+	],
+	"TerrainLayers": [
+		"Layer 0",
+		"Layer 1",
+		"Layer 2",
+		"Layer 3",
+		"Layer 4",
+		"Layer 5",
+		"Layer 6",
+		"Layer 7"
+	]
+}
+}

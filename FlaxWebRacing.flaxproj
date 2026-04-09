@@ -1,0 +1,28 @@
+{
+	"Name": "Flax Web Racing",
+	"Version": "1.0",
+	"Company": "Flax",
+	"Copyright": "",
+	"GameTarget": "GameTarget",
+	"EditorTarget": "GameEditorTarget",
+	"References": [
+		{
+			"Name": "$(EnginePath)/Flax.flaxproj"
+		}
+	],
+	"DefaultScene": "383acff84e2b62a22dad0197137011ca",
+	"DefaultSceneSpawn": {
+		"Position": {
+			"X": -1526.2313,
+			"Y": 1411.4558,
+			"Z": 2377.9893
+		},
+		"Direction": {
+			"X": 0.6618984,
+			"Y": -0.39840358,
+			"Z": -0.63495284
+		}
+	},
+	"MinEngineVersion": "1.12",
+	"EngineNickname": null
+}

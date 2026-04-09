@@ -1,0 +1,54 @@
+{
+	"ID": "a05e50844055df003026cf93f5f35a2b",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6911,
+	"Data": [
+	{
+		"ID": "f116eaba457c9c83499f7ab0e12efdb4",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "View",
+		"StaticFlags": 0
+	},
+	{
+		"ID": "a7e80e13490b270a2b44209d30a111fd",
+		"TypeName": "Game.View",
+		"ParentID": "f116eaba457c9c83499f7ab0e12efdb4",
+		"Target": "dc582eb247add6949f44739335afe037",
+		"Camera": "59bc986b4b39172ed71b9896e65bac34",
+		"CameraDistanceRange": {
+			"X": 20.0,
+			"Y": 30.0
+		}
+	},
+	{
+		"ID": "59bc986b4b39172ed71b9896e65bac34",
+		"TypeName": "FlaxEngine.Camera",
+		"ParentID": "f116eaba457c9c83499f7ab0e12efdb4",
+		"Name": "Camera",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 2000.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": -0.0,
+				"W": -4.3711388286737935e-8
+			}
+		},
+		"StaticFlags": 0,
+		"FOV": 40.0,
+		"Far": 10000.0
+	},
+	{
+		"ID": "ae516de2482452f1560159b44917be63",
+		"TypeName": "FlaxEngine.AudioListener",
+		"ParentID": "59bc986b4b39172ed71b9896e65bac34",
+		"Name": "Audio Listener",
+		"StaticFlags": 0
+	}
+]
+}

@@ -1,0 +1,125 @@
+{
+	"ID": "014584b145761f202bdc9db2e75a1638",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6911,
+	"Data": [
+	{
+		"ID": "96fd20c3407735ed7b407fb554605123",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "ROOT"
+	},
+	{
+		"ID": "009d4f704923a66728a3a99ffcd25bbd",
+		"TypeName": "FlaxEngine.ModelPrefab",
+		"ParentID": "96fd20c3407735ed7b407fb554605123",
+		"ImportPath": "C:\\Users/Wojtek/Downloads/Starter-Kit-Racing/models/vehicle-truck-yellow.glb",
+		"ImportOptions": {
+			"Type": 3,
+			"MergeMeshes": false,
+			"SubAssetFolder": "shared"
+		}
+	},
+	{
+		"ID": "6fdb17ba4eccee0215debbba5b99f1c9",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "96fd20c3407735ed7b407fb554605123",
+		"Name": "underside",
+		"Transform": {
+			"Translation": {
+				"X": -0.0000018090029243467145,
+				"Y": 30.000001907348633,
+				"Z": -10.000000953674316
+			}
+		},
+		"Model": "779cfc1b47c7b9943133ecab778e7021",
+		"Buffer": {
+			"Entries": []
+		}
+	},
+	{
+		"ID": "29b421db40386f6e209f78924ffeacdb",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "96fd20c3407735ed7b407fb554605123",
+		"Name": "wheel-back-left",
+		"Transform": {
+			"Translation": {
+				"X": 54.999996185302734,
+				"Y": 30.000001907348633,
+				"Z": 65.69999694824219
+			}
+		},
+		"Model": "b0fbc2f945c2c0cb01cc83ac4550f1cb",
+		"Buffer": {
+			"Entries": []
+		}
+	},
+	{
+		"ID": "0d08a8784a6d70facf4b7e9a5346645f",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "96fd20c3407735ed7b407fb554605123",
+		"Name": "wheel-back-right",
+		"Transform": {
+			"Translation": {
+				"X": -55.0,
+				"Y": 30.000001907348633,
+				"Z": 65.69999694824219
+			}
+		},
+		"Model": "f5d42b4c479fd111a1cbfc8dbb66579c",
+		"Buffer": {
+			"Entries": []
+		}
+	},
+	{
+		"ID": "00763da3431f850a87ef5fba3426ffea",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "96fd20c3407735ed7b407fb554605123",
+		"Name": "wheel-front-left",
+		"Transform": {
+			"Translation": {
+				"X": 55.0,
+				"Y": 30.000001907348633,
+				"Z": -85.69999694824219
+			}
+		},
+		"Model": "99432fab4b26a415a48b47a7ee069bf2",
+		"Buffer": {
+			"Entries": []
+		}
+	},
+	{
+		"ID": "0daefa9a47871b331428679a4bf0401e",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "96fd20c3407735ed7b407fb554605123",
+		"Name": "wheel-front-right",
+		"Transform": {
+			"Translation": {
+				"X": -55.0,
+				"Y": 30.000001907348633,
+				"Z": -85.69999694824219
+			}
+		},
+		"Model": "e27a6aa04dff7f315ea6c4bf07301947",
+		"Buffer": {
+			"Entries": []
+		}
+	},
+	{
+		"ID": "2442b8ed4e5a804a4b3eb1b0c320903f",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "96fd20c3407735ed7b407fb554605123",
+		"Name": "body",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 40.0,
+				"Z": -1.8047785217256e-14
+			}
+		},
+		"Model": "bfedcd464b5ff391f02ccc91f5b3cba7",
+		"Buffer": {
+			"Entries": []
+		}
+	}
+]
+}
