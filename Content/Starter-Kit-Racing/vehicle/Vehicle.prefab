@@ -6,7 +6,6 @@
 	{
 		"ID": "105e4b2548b50537e0a724a9ae68c694",
 		"TypeName": "FlaxEngine.WheeledVehicle",
-		"ParentID": "00000000000000000000000000000000",
 		"Name": "Vehicle",
 		"StaticFlags": 0,
 		"Layer": 3,
@@ -340,12 +339,88 @@
 		"Transform": {
 			"Translation": {
 				"X": 0.0,
-				"Y": 44.36516952514648,
+				"Y": 44.365169525146484,
 				"Z": 0.0
 			}
 		},
 		"StaticFlags": 0,
 		"Layer": 1,
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "34bedf8748020e76e77004a7db346efc",
+		"TypeName": "FlaxEngine.AnimatedModel",
+		"ParentID": "f646fc9b48c4da0c7ab8a8b97a5ae71e",
+		"Name": "antenna",
+		"Transform": {
+			"Translation": {
+				"X": -32.600830078125,
+				"Y": 39.404911041259766,
+				"Z": 104.60869598388672
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": -1.0,
+				"Z": 0.0,
+				"W": 1.4901161193847656e-8
+			},
+			"Scale": {
+				"X": 0.20000000298023224,
+				"Y": 0.20000000298023224,
+				"Z": 0.20000000298023224
+			}
+		},
+		"StaticFlags": 0,
+		"SkinnedModel": "5b5c72eb4bdf0bd1d09814a502fa9ca0",
+		"AnimationGraph": "67c8242a47171bfe5610d895eaa940be",
+		"PerBoneMotionBlur": false,
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "1049ddbf49bebc3607a533a840f3d46e",
+		"TypeName": "FlaxEngine.AnimatedModel",
+		"ParentID": "f646fc9b48c4da0c7ab8a8b97a5ae71e",
+		"Name": "antenna 0",
+		"Transform": {
+			"Translation": {
+				"X": 35.75054168701172,
+				"Y": 39.404911041259766,
+				"Z": 104.60869598388672
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": -1.0,
+				"Z": 0.0,
+				"W": 1.4901161193847656e-8
+			},
+			"Scale": {
+				"X": 0.20000000298023224,
+				"Y": 0.20000000298023224,
+				"Z": 0.20000000298023224
+			}
+		},
+		"StaticFlags": 0,
+		"SkinnedModel": "5b5c72eb4bdf0bd1d09814a502fa9ca0",
+		"AnimationGraph": "67c8242a47171bfe5610d895eaa940be",
+		"PerBoneMotionBlur": false,
 		"Buffer": {
 			"Entries": [
 				{
@@ -453,7 +528,7 @@
 			"Translation": {
 				"X": 0.0,
 				"Y": 53.16012954711914,
-				"Z": 126.17108154296876
+				"Z": 126.17108154296875
 			}
 		},
 		"StaticFlags": 0,
