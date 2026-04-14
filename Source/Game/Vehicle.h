@@ -17,7 +17,7 @@ API_CLASS() class GAME_API Vehicle : public Script
 	DECLARE_SCRIPTING_TYPE(Vehicle);
 
 private:
-	Vector3 _input = Vector3::Zero;
+	Float3 _input = Float3::Zero;
 	float _bodyLean = 0.0f;
 	float _bodyPitch = 0.0f;
 

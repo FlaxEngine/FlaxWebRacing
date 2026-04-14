@@ -33,7 +33,7 @@ void Vehicle::OnEnable()
 void Vehicle::OnUpdate()
 {
     // Read inputs
-    _input += Vector3(Input::GetAxis(TEXT("Horizontal")), 0.0f, Input::GetAxis(TEXT("Vertical")));
+    _input += Float3(Input::GetAxis(TEXT("Horizontal")), 0.0f, Input::GetAxis(TEXT("Vertical")));
 }
 
 void Vehicle::OnFixedUpdate()
@@ -43,7 +43,7 @@ void Vehicle::OnFixedUpdate()
 	CHECK(car && Model);
 
 	// Apply car drive inputs
-	Vector3 velocity(_input);
+	Float3 velocity(_input);
 	//velocity.Normalize();
 	car->SetThrottle(velocity.Z);
 	car->SetSteering(velocity.X);
@@ -106,7 +106,7 @@ void Vehicle::OnCollisionEnter(const Collision& collision)
 	if (ImpactSound && ImpactSound->GetState() == AudioSource::States::Stopped)
 	{
 		// Play impact sound when car body collider hits sth
-		auto impactFactor = Math::Saturate(collision.GetRelativeVelocity().Length() * 0.1f);
+		auto impactFactor = Math::Saturate((float)collision.GetRelativeVelocity().Length() * 0.1f);
 		auto targetVolume = Math::Remap(impactFactor, 0.0f, 1.0f, 0.2f, 0.8f) * ImpactVolume;
 		ImpactSound->SetVolume(targetVolume);
 		ImpactSound->Play();
