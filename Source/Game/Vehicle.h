@@ -45,6 +45,9 @@ public:
 	// Screech sound volume scale.
 	API_FIELD() float ScreechVolume = 1.0f;
 
+	// Adds external input control (X=horizonal, Y=vertical).
+	void AddInput(const Float2& input);
+
 public:
 	// [Script]
 	void OnEnable() override;

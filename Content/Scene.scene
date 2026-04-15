@@ -7223,6 +7223,25 @@
 			"Loop": true,
 			"PlayOnStart": true,
 			"AllowSpatialization": false
+		},
+		{
+			"ID": "ffc9ef6243aed54f27623b9294d69ffd",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "383acff84e2b62a22dad0197137011ca",
+			"Name": "VirtualThumbStick"
+		},
+		{
+			"ID": "a9d9ceb5452c972b130f6aaf5701393c",
+			"TypeName": "Game.VirtualThumbStick",
+			"ParentID": "ffc9ef6243aed54f27623b9294d69ffd",
+			"Target": "26656d8241e9c37430fe3685a7ad8f6d",
+			"BrushImage": "59c46f4e4405bd65cc3388b16ed1449a",
+			"ColorDefault": {
+				"R": 1.0,
+				"G": 1.0,
+				"B": 1.0,
+				"A": 0.3055500090122223
+			}
 		}
 	]
 }

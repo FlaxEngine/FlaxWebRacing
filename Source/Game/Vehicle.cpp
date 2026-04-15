@@ -16,6 +16,11 @@ Vehicle::Vehicle(const SpawnParams& params)
     _tickFixedUpdate = true;
 }
 
+void Vehicle::AddInput(const Float2& input)
+{
+	_input += Float3(input.X, 0, input.Y);
+}
+
 void Vehicle::OnEnable()
 {
 	auto car = Cast<WheeledVehicle>(GetActor());
