@@ -46,7 +46,7 @@ public:
 	API_FIELD() float ScreechVolume = 1.0f;
 
 	// Adds external input control (X=horizonal, Y=vertical).
-	void AddInput(const Float2& input);
+	void AddInput(const Float2& input, bool global = false);
 
 public:
 	// [Script]

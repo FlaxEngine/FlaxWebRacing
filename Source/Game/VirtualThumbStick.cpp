@@ -76,7 +76,7 @@ void VirtualThumbStick::OnUpdate()
 		{
 			// Scale input intensity over time to provide smoother control
 			float inputScale = Math::Saturate(_pressTime * 2.0f);
-			Target->AddInput(_input * inputScale);
+			Target->AddInput(_input * inputScale, true);
 		}
 	}
 }

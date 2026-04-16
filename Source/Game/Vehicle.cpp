@@ -3,6 +3,7 @@
 #include "Engine/Engine/Units.h"
 #include "Engine/Input/Input.h"
 #include "Engine/Level/Actor.h"
+#include "Engine/Level/Actors/Camera.h"
 #include "Engine/Physics/Physics.h"
 #include "Engine/Physics/Actors/RigidBody.h"
 #include "Engine/Engine/Time.h"
@@ -16,9 +17,21 @@ Vehicle::Vehicle(const SpawnParams& params)
     _tickFixedUpdate = true;
 }
 
-void Vehicle::AddInput(const Float2& input)
+void Vehicle::AddInput(const Float2& input, bool global)
 {
-	_input += Float3(input.X, 0, input.Y);
+	Float3 delta(input.X, 0, input.Y);
+	if (global)
+	{
+		// Convert global input to local space (eg. from camera view)
+		const Transform& camera = Camera::GetMainCamera()->GetTransform();
+		const Transform& car = GetActor()->GetTransform();
+		delta = camera.LocalToWorldVector(delta); // Camera -> World
+		delta = car.WorldToLocalVector(delta); // World -> Car
+		delta = delta * Float3(1, 0, 1); // 2D only
+		delta = delta.GetNormalized() * delta.Length(); // Maintain th original input strength
+
+	}
+	_input += delta;
 }
 
 void Vehicle::OnEnable()
