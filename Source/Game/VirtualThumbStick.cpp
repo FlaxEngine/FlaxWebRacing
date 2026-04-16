@@ -39,6 +39,8 @@ void VirtualThumbStick::OnEnable()
 		_window = Editor::Managed->GetGameWindow(true);
 	}
 #endif
+	if (!_window)
+		return;
 	_window->Draw.Bind<VirtualThumbStick, &VirtualThumbStick::OnDraw>(this);
 	_window->MouseDown.Bind<VirtualThumbStick, &VirtualThumbStick::OnMouseDown>(this);
 	_window->MouseMove.Bind<VirtualThumbStick, &VirtualThumbStick::OnMouseMove>(this);
