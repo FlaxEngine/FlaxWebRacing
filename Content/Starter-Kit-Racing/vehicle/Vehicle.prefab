@@ -1,7 +1,7 @@
 {
 	"ID": "2a57c9374ff9382c7b30b784a801f39f",
 	"TypeName": "FlaxEngine.Prefab",
-	"EngineBuild": 6911,
+	"EngineBuild": 6912,
 	"Data": [
 	{
 		"ID": "105e4b2548b50537e0a724a9ae68c694",
@@ -383,6 +383,8 @@
 		"SkinnedModel": "5b5c72eb4bdf0bd1d09814a502fa9ca0",
 		"AnimationGraph": "67c8242a47171bfe5610d895eaa940be",
 		"PerBoneMotionBlur": false,
+		"UpdateMode": 1,
+		"DrawModes": 111,
 		"Buffer": {
 			"Entries": [
 				{
@@ -421,6 +423,8 @@
 		"SkinnedModel": "5b5c72eb4bdf0bd1d09814a502fa9ca0",
 		"AnimationGraph": "67c8242a47171bfe5610d895eaa940be",
 		"PerBoneMotionBlur": false,
+		"UpdateMode": 1,
+		"DrawModes": 111,
 		"Buffer": {
 			"Entries": [
 				{
