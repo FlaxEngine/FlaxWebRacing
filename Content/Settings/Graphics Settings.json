@@ -1,7 +1,7 @@
 {
 	"ID": "4eaf325e4cd72aa4cdeb6393cad05466",
 	"TypeName": "FlaxEditor.Content.Settings.GraphicsSettings",
-	"EngineBuild": 6911,
+	"EngineBuild": 6912,
 	"Data": {
 	"UseVSync": false,
 	"AAQuality": 1,
@@ -224,7 +224,7 @@
 			}
 		},
 		"LensFlares": {
-			"OverrideFlags": 1,
+			"OverrideFlags": 513,
 			"Intensity": 0.0,
 			"Ghosts": 4,
 			"HaloWidth": 0.04,
@@ -234,7 +234,7 @@
 			"ThresholdBias": -0.5,
 			"ThresholdScale": 0.22,
 			"LensDirt": null,
-			"LensDirtIntensity": 1.0,
+			"LensDirtIntensity": 0.0,
 			"LensColor": null,
 			"LensStar": null
 		},
