@@ -21,7 +21,7 @@ void View::OnFixedUpdate()
 	auto position = GetActor()->GetPosition();
 	auto target = Target->GetPosition();
 	auto speedFactor = Math::Saturate(Math::Abs(UNITS_TO_METERS((Target->GetLinearVelocity() * Vector3(1, 0, 1)).Length())));
-	target += Target->GetDirection() * (METERS_TO_UNITS(2.0f) * speedFactor); // Move camera forward when moving fast
+	target += Target->GetForward() * (METERS_TO_UNITS(2.0f) * speedFactor); // Move camera forward when moving fast
 	position = Vector3::Lerp(position, target, Math::Saturate(Time::GetDeltaTime() * 4));
 	GetActor()->SetPosition(position);
 
